@@ -18,6 +18,12 @@ namespace EmployeeWebApplication.Controllers
             _logger = logger;
         }
 
+        [HttpGet(Name = "Test")]
+        public string TestMessage()
+        {
+           return "Test Successful";
+        }
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
