@@ -17,11 +17,10 @@ namespace EmployeeWebApplication.Controllers
         {
             _logger = logger;
         }
-
-        [HttpGet(Name = "Test")]
-        public string TestMessage()
+        [HttpGet("Test", Name = "Test")]
+        public int CurrentYear()
         {
-           return "Test Successful";
+            return 2025;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
