@@ -32,7 +32,7 @@ namespace EmployeeWebApplication.Controllers
         [HttpGet("Hello")]
         public string Hello()
         {
-            return "Hello from EmployeeController";
+            return "EmployeeController";
         }
 
         [HttpPost]
