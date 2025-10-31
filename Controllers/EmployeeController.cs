@@ -29,6 +29,11 @@ namespace EmployeeWebApplication.Controllers
                 return NotFound();
             return Ok(employee);
         }
+        [HttpGet("Hello")]
+        public string Hello()
+        {
+            return "Hello from EmployeeController";
+        }
 
         [HttpPost]
         public ActionResult Add(Employee employee)
