@@ -18,10 +18,10 @@ namespace EmployeeWebApplication.Controllers
             _logger = logger;
         }
         [HttpGet("Test", Name = "Test")]
-        public int CurrentYear()
-        {
-            return 2025;
-        }
+        ////public int CurrentYear()
+        //{
+        //    return 2025;
+        //}
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
